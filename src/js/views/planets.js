@@ -19,7 +19,7 @@ export function Planets() {
 			{data &&
 				data.results.map((item, index) => {
 					return (
-						<a key={index} href={"/planet/" + item.uid}>
+						<a key={index} href={"/planets/" + item.uid}>
 							{item.name}
 						</a>
 					);
