@@ -15,8 +15,7 @@ const images = {
 
 	"5": "https://i.pinimg.com/originals/89/23/8d/89238d20994113e9a40351eb0516f051.jpg",
 
-	"6":
-		"https://static.wikia.nocookie.net/frstarwars/images/a/a2/Owen_Lars.jpg/revision/latest/top-crop/width/360/height/450?cb=20160325202556",
+	"6": "https://img.planete-starwars.com/upload/databank/1/4280_owen.jpg",
 	"7": "https://i.pinimg.com/236x/7d/0c/5b/7d0c5b99034033a8d50548a7aa1e64b1.jpg",
 	"8": "",
 	"9": ""
@@ -36,18 +35,17 @@ export function Characters() {
 	const favorites = useFavorites();
 
 	return (
-		<div className="container">
+		<div className="container-flex">
 			<div className="row">
-				<h1>Characters</h1>
+				<h1 className="text">Characters</h1>
 				{data
 					? data.results.map((item, index) => {
 							return (
-								<div className="col-3 col-xs-6" key={index}>
+								<div className="col-3 col-xs-6 card-profiles" key={index}>
 									<div className="card">
-										<img src={images[item.uid]} className="card-img-top card-img-top" alt="..." />
+										<img src={images[item.uid]} className="card-img-top" alt="..." />
 										<div className="card-body">
 											<h5 className="card-title">{item.name}</h5>
-
 											<a href={"/people/" + item.uid} className="btn btn-primary">
 												Go somewhere
 											</a>

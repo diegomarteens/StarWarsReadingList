@@ -2,11 +2,34 @@
     General Styles
 */
 .logo{
-    height: 7rem;
-    width: 10rem;
+    width: 150px;
+    height: 75px;
+    margin-left: 50px;
 }
+
 .card-img-top {
+    align-items: center;
     height: 15rem;
-    width: 10.5rem;
-    align-content: center;
+    width: 13rem;
+   
+}
+
+.card-profiles{
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+  
+.card-profiles{
+    .row{ flex-wrap: nowrap;
+        .col-3{
+            display: inline-block
+
+        }}}
+
+.card {
+    align-items: center;
+}
+.text {
+    color:rgb(211, 211, 211);
 }
